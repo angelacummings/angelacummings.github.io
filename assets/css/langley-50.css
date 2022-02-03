@@ -777,7 +777,7 @@ a.footnote.highlighted::before {
   box-sizing:border-box;
   position:absolute;
   z-index:30;
-  right:2em;
+  right:1em;
   top:1.1em;
   cursor:pointer;
   transition: all 0.3s ease-in;
