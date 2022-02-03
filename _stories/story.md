@@ -1,17 +1,7 @@
 ---
-title: Markdown Test Page
-subtitle: How It Works Together
-image: macbook-air.jpg
-caption: (Image by Apple)
-season: autumn
-status: ongoing
-tags: [test]
-series: [life]
-date: 2022-01-17
-lede: true
-toc: true
+title: Story Page
+subtitle: Or, How I Learned to Love Markdown
 published: false
-shift-headings: true
 ---
 
 Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco.

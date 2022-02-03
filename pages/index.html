@@ -1,9 +1,20 @@
 ---
-title: Latest posts
-description: A collection of articles and posts by Pavel Soukenik.
+title: Contents
 permalink: /
+preserve-headings: true
 ---
 
-{%- for note in site.notes -%}
-  {%- include snippet.html full=true -%}
+<h2><a href="/observations">Observations</a></h2>
+{%- for note in site.observations -%}
+  {%- include snippet.html -%}
+{%- endfor -%}
+
+<h2><a href="/stories">Stories</a></h2>
+{%- for note in site.stories -%}
+  {%- include snippet.html -%}
+{%- endfor -%}
+
+<h2><a href="/poems">Poems</a></h2>
+{%- for note in site.poems -%}
+  {%- include snippet.html -%}
 {%- endfor -%}

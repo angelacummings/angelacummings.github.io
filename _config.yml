@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Soukie’s Place
-name: Pavel Soukenik
-email: pavel@soukie.net
-description: A collection of articles and posts by Pavel Soukenik.
+title: Angela Cummings
+name: Angela Cummings
+email: eleventulips@hotmail.com
+description: Website of Angela Cummings with a collection of poems, stories and observations.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://soukie.net # the base hostname & protocol for your site, e.g. http://example.com
+url: https://angelacummings.com # the base hostname & protocol for your site, e.g. http://example.com
 copyright_name: MIT
 encoding: utf-8
 
@@ -51,9 +51,6 @@ sass:
   style: compressed
 
 collections:
-    notes:
-      output: true
-      permalink: /:title
     poems:
       output: true
       permalink: /poems/:title
@@ -63,9 +60,6 @@ collections:
     stories:
       output: true
       permalink: /stories/:title
-    series:
-      output: true
-      permalink: /series/:title
 
 toc:
   max_level: 3
@@ -74,26 +68,15 @@ feed:
   excerpt_only: true
   path: /blog.atom
   collections:
-    notes:
+    observations:
       excerpt_only: true
-      path: "/feed.xml"
+      path: "/observations.xml"
 
 defaults:
   - scope:
       path: ""
     values:
-      layout: page
-      title: ""
-  - scope:
-      path: ""
-      type: series
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: note
+      layout: main
       title: ""
 
 # Exclude from processing.

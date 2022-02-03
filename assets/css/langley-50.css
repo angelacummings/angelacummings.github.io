@@ -196,8 +196,13 @@ body > header h1 {
   color: var(--Merino);
 }
 
-body > header h1 a {
+body > header h1 {
+  a {
   color: var(--White);
+  }
+  a:hover, a:active, a:focus {
+    color: var(--White);
+  }
 }
 
 main header nav { display: block;}
@@ -296,7 +301,7 @@ div.content {
   }
   main > div.content {
     grid-column: 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 2;
   }
   main > #sidenote-column, #about-column {
     grid-column: 3;
