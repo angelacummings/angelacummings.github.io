@@ -21,4 +21,4 @@ Until then, I beam out a hearty thumb's up to you, Pluto, our poetic planette; o
 
  
 
-[^Note]: "Clearing the neighborhood" is one of three criteria for a celestial body to be considered a planet in the solar system.
+[^note]: "Clearing the neighborhood" is one of three criteria for a celestial body to be considered a planet in the solar system.
