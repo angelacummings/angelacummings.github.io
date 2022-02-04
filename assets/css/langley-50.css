@@ -827,6 +827,7 @@ nav ul {
 nav li {
   font-weight: bold;
   margin: 2em 0;
+  white-space: nowrap;
   color: var(--White);
   background-color: var(--Asparagus);
   transition: all 0.4s ease-in-out;
@@ -886,6 +887,7 @@ body > header nav {
   overflow:hidden;
   li {
     position: relative;
+    visibility: hidden;
     opacity: 0;
     text-align: right;
     width:0;
@@ -903,8 +905,9 @@ body > header nav {
   }
 }
 
-.navigation {
+body.navigation {
   > header nav li {
+    visibility: visible;
     opacity: 1;
     width:10em;
     right:0;
@@ -927,11 +930,12 @@ body > header nav {
 
 main {
   z-index: 30;
+  opacity: 1;
   visibility:visible;
   transition: all 0.4s ease-in-out;
 }
 
-.navigation main {
+body.navigation main {
   opacity: 0;
   transform: scale(0.85) translatey(-7.5%);
   visibility:hidden;
