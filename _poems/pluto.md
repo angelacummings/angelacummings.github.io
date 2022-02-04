@@ -1,6 +1,5 @@
 ---
 title: Pluto
-published: false
 ---
 
 - Pluto, you are out. Just like that.
