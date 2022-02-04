@@ -2,7 +2,6 @@
 title: Hearted
 subtitle: An Update on the Pluto Situation
 date: 2015-07-15
-
 ---
 
 Yesterday, New Horizons drove by Pluto and paparazzied back home some very revealing photographs. These published photos allow us, for the very first time, to see our former friend’s birthmarks, the most noteworthy of which is a white, heart-shaped mass sitting somewhere on or near Pluto’s ruddy-toned dwarf-ball of a face. 
