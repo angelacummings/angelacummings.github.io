@@ -89,7 +89,6 @@
   --box-shadow-8: none; ; /* from ms-depth-8 */
   --border: 1px solid var(--Anzac);
   --float-width: 40%;
-
   --transition: 0.467s cubic-bezier(0.1,0.9,0.2,1);
 }
 
@@ -780,7 +779,7 @@ a.footnote.highlighted::before {
   right:1em;
   top:1.1em;
   cursor:pointer;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 576px) {
@@ -805,7 +804,7 @@ a.footnote.highlighted::before {
   left:0;
   background: var(--Merino);
   top:7px;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 #burgerBtn:after {
   content:"";
@@ -816,7 +815,7 @@ a.footnote.highlighted::before {
   left:0;
   background: var(--Merino);
   bottom:0;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul {
@@ -830,7 +829,7 @@ nav li {
   margin: 2em 0;
   color: var(--White);
   background-color: var(--Asparagus);
-  transition: all 0.2s ease-in;
+  transition: all 0.4s ease-in-out;
 }
 
 nav li.selected {
@@ -891,7 +890,7 @@ body > header nav {
     text-align: right;
     width:0;
     right: -3rem;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in-out;
     & + li {
       right:-6em;
       & + li {
@@ -929,7 +928,7 @@ body > header nav {
 main {
   z-index: 30;
   visibility:visible;
-  transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in-out;
 }
 
 .navigation main {
