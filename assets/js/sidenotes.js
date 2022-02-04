@@ -550,7 +550,9 @@ function constructSidenotes() {
     let aboutBar = document.querySelector("#about-column");
     let metaWidth = 0;
     if (window.innerWidth >= 992 && window.innerWidth < 1200)
-        metaWidth = headerBar.clientHeight + aboutBar.clientHeight + 32;
+        metaWidth = headerBar.clientHeight + aboutBar.clientHeight + 64;
+    if (window.innerWidth >= 1200)
+        metaWidth = aboutBar.clientHeight + 32;
     if (!markdownBody) return;
 
     /*  Add the sidenote columns (removing them first if they already exist).
