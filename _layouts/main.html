@@ -9,29 +9,31 @@ layout: default
 <div class="content{% if page.lede %} lede{% endif %}">
   <div id="dummy">
   </div>
-{% if page.title != "" %}
-  <h1>{{ page.title }}</h1>
-  {% if page.subtitle %}
-  <div class="subtitle">{{ page.subtitle | markdownify | strip_html }}</div>
-  {% endif %}
+{% if page.collection == "poems" %}
+  <div class="poetry">
+  <h2>{{ page.title | markdownify | striphtml }}</h2>
+{% else %}
+  {%- if page.title != "" %}
+  <h1>{{ page.title | markdownify | striphtml }}</h1>
+  {%- endif %}
 {% endif %}
-{%- if page.image -%}
+{% if page.subtitle %}
+  <div class="subtitle">{{ page.subtitle | markdownify | strip_html }}</div>
+{% endif %}
+{% if page.image %}
   <figure>
     <img src="/img/{{ page.image }}" alt="featured image" />
     {%- if page.caption -%}
       <figcaption>{{ page.caption | markdownify }}</figcaption>
     {%- endif -%}
   </figure>
-{%- endif -%}
-{%- if page.written -%}
+{% endif %}
+{% if page.written %}
   <div class='date'>{{ page.written | date: "%B %d, %Y" }}</div>
-{%- endif -%}
+{% endif %}
+{% include extend-markup.html html=content %}
 {% if page.collection == "poems" %}
-<div class="poetry">
-{% include extend-markup.html html=content poetry=true preserve-headings=page.preserve-headings %}
-</div>
-{% else %}
-{% include extend-markup.html html=content preserve-headings=page.preserve-headings %}
+  </div>
 {% endif %}
 </div>
 <div id='about-column'>

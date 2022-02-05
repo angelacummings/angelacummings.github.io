@@ -53,7 +53,7 @@ In cupidatat nulla aliquip tempor ad Lorem Lorem quis voluptate officia consecte
 
 Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat veniam ullamco occaecat do ut. Tempor et esse reprehenderit veniam proident ipsum irure sit ullamco et labore ea excepteur nulla labore ut. Ex aute minim quis tempor in eu id id irure ea nostrud dolor esse.
 
->> ### Fact box
+>> ## Factbox
 >>
 >> Officia irure in non voluptate adipisicing sit amet tempor duis dolore deserunt enim ut. Reprehenderit incididunt in ad anim et deserunt deserunt Lorem laborum quis.
 >>
@@ -131,7 +131,7 @@ A typical ergonomic keyboard
 *Proident sit veniam in est proident officia adipisicing* ea tempor cillum non cillum velit deserunt. Voluptate laborum incididunt sit consectetur Lorem irure incididunt voluptate nostrud. Commodo ut eiusmod tempor cupidatat esse enim minim ex anim consequat. Mollit sint culpa qui laboris quis consectetur ad sint esse. Amet anim anim minim ullamco et duis non irure. Sit tempor adipisicing ea laboris `culpa ex duis sint` anim aute reprehenderit id eu ea. Aute [excepteur proident](#!) Lorem minim adipisicing nostrud mollit ad ut voluptate do nulla esse occaecat aliqua sint anim.
 
 ![Remington 92 typewriter](/img/Remington92-n.jpg)
-Remington 92 typewriter, ca. 1929.  
+Remington 92 typewriter.  
 (Image by The National Museum of Finland)
 {: .float.edge}
 
@@ -156,7 +156,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 > And a regular block quote retains its syntax  (`> `).
 
->> ### Factbox
+>> ## Factbox
 >>
 >> And with a special syntax (`>`), we get a factbox. But then it's unclear how to do a heading for it....
 {: .float}
@@ -188,8 +188,6 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 > And this is a quote. So let's make it longer. And this is a quote. So let's make it longer. And this is a quote. So let's make it longer.
 
-No a quote anymore, but let's ==highlight== something.
-
 | Component  | Markdown | Rendered HTML               |
 | :--------  | :------- | :-------------------------- |
 | Pull quote | `> `     | But now with a table that won't fit on the screen, so what's up with that? |
@@ -200,6 +198,8 @@ No a quote anymore, but let's ==highlight== something.
 Normal text again.
 
 Font size test: x**x**{: style="font-family: var(--font-family-sans); font-weight: 400; font-size: calc( var(--sans-ratio) * var(--font-size-m));"}
+
+## Code block
 
 ````
 <html>   <body>     <header>	  <nav/> thous otshu thu aoeuh

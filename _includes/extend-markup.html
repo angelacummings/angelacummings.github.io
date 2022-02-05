@@ -1,7 +1,7 @@
 {% capture nl %}
 {% endcapture %}
 {%- assign content = include.html -%}
-{%- unless include.preserve-headings -%}
+{%- unless page.preserve-headings -%}
   {%- assign content = content | replace: "<h5", "<h6" -%}
   {%- assign content = content | replace: "<h4", "<h5" -%}
   {%- assign content = content | replace: "<h3", "<h4" -%}
@@ -13,7 +13,7 @@
   {%- assign content = content | replace: "</h2>", "</h3>" -%}
   {%- assign content = content | replace: "</h1>", "</h2>" -%}
 {%- endunless -%}
-{%- if include.poetry -%}
+{%- if page.collection == "poems" -%}
   {%- capture stanzabreak -%}</ul>{{nl}}<ul>{%- endcapture -%}
   {%- assign content = content | replace: "  <ul>", "  <div class='indented'>" -%}
   {%- assign content = content | replace: "  <li>~</li>", stanzabreak -%}
