@@ -24,10 +24,10 @@
 
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('/assets/fonts/hkgrotesk-extrabold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/hkgrotesk-extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/hkgrotesk-extrabold.woff2') format('woff2'), /* Modern Browsers */
-         url('/assets/fonts/hkgrotesk-extrabold.woff') format('woff'), /* Modern Browsers */;
+    src: url('/assets/fonts/hkgrotesk-bold.eot'); /* IE9 Compat Modes */
+    src: url('/assets/fonts/hkgrotesk-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/hkgrotesk-bold.woff2') format('woff2'), /* Modern Browsers */
+         url('/assets/fonts/hkgrotesk-bold.woff') format('woff'), /* Modern Browsers */;
     font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
