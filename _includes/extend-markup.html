@@ -2,11 +2,16 @@
 {% endcapture %}
 {%- assign content = include.html -%}
 {%- unless include.preserve-headings -%}
-  {%- capture content -%}{%- include substring.html html=content start-old='<h5' end-old='</h5>' start-new='<h6 ' end-new='</h6>' -%}{%- endcapture -%}
-  {%- capture content -%}{%- include substring.html html=content start-old='<h4' end-old='</h4>' start-new='<h5 ' end-new='</h5>' -%}{%- endcapture -%}
-  {%- capture content -%}{%- include substring.html html=content start-old='<h3' end-old='</h3>' start-new='<h4 ' end-new='</h4>' -%}{%- endcapture -%}
-  {%- capture content -%}{%- include substring.html html=content start-old='<h2' end-old='</h2>' start-new='<h3 ' end-new='</h3>' -%}{%- endcapture -%}
-  {%- capture content -%}{%- include substring.html html=content start-old='<h1' end-old='</h1>' start-new='<h2 ' end-new='</h2>' -%}{%- endcapture -%}
+  {%- assign content = content | replace: "<h5", "<h6" -%}
+  {%- assign content = content | replace: "<h4", "<h5" -%}
+  {%- assign content = content | replace: "<h3", "<h4" -%}
+  {%- assign content = content | replace: "<h2", "<h3" -%}
+  {%- assign content = content | replace: "<h1", "<h2" -%}
+  {%- assign content = content | replace: "</h5>", "</h6>" -%}
+  {%- assign content = content | replace: "</h4>", "</h5>" -%}
+  {%- assign content = content | replace: "</h3>", "</h4>" -%}
+  {%- assign content = content | replace: "</h2>", "</h3>" -%}
+  {%- assign content = content | replace: "</h1>", "</h2>" -%}
 {%- endunless -%}
 {%- if include.poetry -%}
   {%- capture stanzabreak -%}</ul>{{nl}}<ul>{%- endcapture -%}

@@ -47,16 +47,6 @@
 
 :root {
   /* Theme colors */
-  --Cucumber: #8da45c;
-  --SecondGreen: #6b7c45;
-  --ThirdGreen: #4f5b33;
-  --Anzac: #E2BC46;
-  --Tango: #E67F29;
-  --Rust: #c97b6f;
-  --Merino: #F2EEE2;
-  --Lighter: #faf9f4;
-  --White: #fffefd;
-
   --Black: #000000;
   --LightMaple: #9D894D;
   --Molasses: #524728;
@@ -234,6 +224,7 @@ main header span { display: block;}
     max-width: var(--width-body);
     background-color: var(--Parchment);
     padding: var(--margin);
+    padding-bottom: calc( 2 * var(--margin) );
     box-shadow: var(--box-shadow-8);
     border-radius: var(--border-radius-large);
   }
@@ -284,6 +275,7 @@ div.content {
     box-shadow: var(--box-shadow-8);
     width: var(--width-body);
     padding: var(--margin);
+    padding-bottom: calc( 2 * var(--margin) );
     box-shadow: var(--box-shadow-8);
     border-radius: var(--border-radius-large);
   }
