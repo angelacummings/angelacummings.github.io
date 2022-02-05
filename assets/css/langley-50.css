@@ -922,7 +922,7 @@ body > header nav {
 }
 
 body.navigation {
-  > nav li {
+  > header nav li {
     visibility: visible;
     opacity: 1;
     width:10em;
