@@ -15,7 +15,7 @@ title: Near Misses
 - The maple, mondo, and sumac each sway and retract,  
 - reflecting the moves of his craft and his burden. 
 
-- Tonight, I am lone witness to this lavish 
+- Tonight, I am a witness to this lavish 
 
 - scene of a broken heart bending. 
 
@@ -23,10 +23,10 @@ title: Near Misses
 
 - ~
 - Greedy brown birds gorge on unripe Rainiers 
-- while I light a cigarette, make a toast to the fans 
+- while I light a cigarette, toast the fans 
 
-- of the purple smoke tree, and joke “We are *smoking!”* 
+- of the smoke tree, and say “We are *smoking!”* 
 
-- But no one hears. No one is here. 
+- But no one hears; is here. 
 
 - Maybe all great gardens are born from such near misses. 
