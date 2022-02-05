@@ -304,7 +304,7 @@ function updateSidenotePositions() {
         NOTE: This doesnâ€™t quite do what it says (due to overflow), but thatâ€™s
         fine; nothing really breaks as a result...
         */
-    let markdownBody = document.querySelector("div.content");
+    let markdownBody = document.querySelector("main");
     let offset = markdownBody.offsetTop || 0;
 /*    if (GW.sidenotes.sidenoteColumn.offsetTop < firstFullWidthBlock.offsetTop) {
         GW.sidenotes.sidenoteColumn.style.top = offset + "px";
@@ -545,8 +545,8 @@ function constructSidenotes() {
     /*  Do nothing if sidenotes.js somehow gets run extremely early in the page
         load process.
         */
-    let markdownBody = document.querySelector("div.content");
-    let headerBar = document.querySelector("main > header");
+    let markdownBody = document.querySelector("main");
+    let headerBar = document.querySelector("div.page > nav");
     let aboutBar = document.querySelector("#about-column");
     let metaWidth = 0;
     if (window.innerWidth >= 992 && window.innerWidth < 1200)

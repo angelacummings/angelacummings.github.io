@@ -215,11 +215,10 @@ body > header h1 {
   }
 }
 
-main header nav { display: block;}
-main header span { display: block;}
+div.page nav { display: block;}
 
 @media (max-width: 991px) {
-  main {
+  div.page {
     max-width: var(--width-body);
     background-color: var(--Parchment);
     padding: var(--margin);
@@ -228,17 +227,17 @@ main header span { display: block;}
     border-radius: var(--border-radius-large);
   }
   /* Hide desktop-only elements*/
-  #sidenote-column, main header, #about-column {
+  #sidenote-column, div.page nav, #about-column {
     display: none;
   }
 }
 
-main > header, #about-column {
+div.page > nav, #about-column {
   padding-top: var(--margin);
   line-height: var(--leading-sans);
 }
 
-div.content {
+main {
   position: relative;
   z-index: 1;
   min-height: 20em;
@@ -258,16 +257,16 @@ div.content {
   body > header {
     width: calc(var(--width-body) + 2*var(--margin) + var(--width-sidebar) + var(--gutter) + 2rem);
   }
-  main {
+  div.page {
     display: grid;
     max-width: initial;
     grid-template-columns: auto auto;
     grid-gap: var(--gutter);
   }
-  main > * {
+  div.page > * {
     grid-column: 1;
   }
-  div.content {
+  main {
     grid-row: 1 / 4;
     position: relative;
     z-index: 1;
@@ -279,16 +278,16 @@ div.content {
     box-shadow: var(--box-shadow-8);
     border-radius: var(--border-radius-large);
   }
-  main > header, main > #sidenote-column, #about-column {
+  div.page nav, div.page > #sidenote-column, #about-column {
     display: block;
     position: relative;
     grid-column: 2;
     width: var(--width-sidebar);
   }
-  main > header, #about-column {
+  div.page nav, #about-column {
     height: fit-content;
   }
-  main > header {
+  div.page nav {
     width: calc( var(--width-sidebar) + 2em );
   }
   #about-column {
@@ -297,30 +296,27 @@ div.content {
     background-color: var(--Parchment);
     box-shadow: var(--box-shadow-4);
   }
-  main > header span {
-    text-transform: uppercase;
-  }
 }
 
 @media (min-width: 1200px) {
   body > header {
     width: calc(var(--width-body) + 2*var(--margin) );
   }
-  main {
+  div.page {
     grid-template-columns: auto auto auto;
   }
-  main > header {
+  div.page > nav {
     grid-column: 1;
     grid-row: 1 / 3;
   }
-  main > div.content {
+  div.page > main {
     grid-column: 2;
     grid-row: 1 / 3;
   }
-  main > #sidenote-column, #about-column {
+  div.page > #sidenote-column, #about-column {
     grid-column: 3;
   }
-  main > #sidenote-column {
+  div.page > #sidenote-column {
     width: calc( var(--width-sidebar) + 2rem );
   }
 }
@@ -500,7 +496,7 @@ aside.pullquote {
 }
 
 /* When div.box follows headline (optionally with a strapline or image), format it as a lede paragraph  */
-.content.lede > p:first-of-type {
+main.lede > p:first-of-type {
   color: var(--Molasses);
   font-weight: 700;
 }
@@ -632,12 +628,12 @@ a.perma {
   display: none;
 }
 @media (min-width: 576px) {
-  div.content > [id] {
+  main > [id] {
     position: relative;
     left: -2rem;
     padding-left: 2rem;
   }
-  div.content > [id]:hover > a.perma {
+  main > [id]:hover > a.perma {
     display: inline-block;
   }
 }
@@ -794,7 +790,7 @@ a.footnote.highlighted::before {
   box-sizing:border-box;
   position:absolute;
   z-index:30;
-  right:1em;
+  right: var(--margin);
   top:1.1em;
   cursor:pointer;
   transition: all 0.3s ease-in-out;
@@ -926,7 +922,7 @@ body > header nav {
 }
 
 body.navigation {
-  > header nav li {
+  > nav li {
     visibility: visible;
     opacity: 1;
     width:10em;
@@ -948,14 +944,14 @@ body.navigation {
   }
 }
 
-main {
+div.page {
   z-index: 30;
   opacity: 1;
   visibility:visible;
   transition: all 0.4s ease-in-out;
 }
 
-body.navigation main {
+body.navigation div.page {
   opacity: 0;
   transform: scale(0.85) translatey(-7.5%);
   visibility:hidden;
