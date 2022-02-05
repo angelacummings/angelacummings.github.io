@@ -134,6 +134,7 @@ body {
   font-family: var(--font-family-serif);
 }
 
+.sans,
 header,
 footer,
 table,
@@ -173,7 +174,6 @@ body > header, body > footer {
 }
 
 body > header {
-  text-align: center;
   margin-top: 0;
   padding: calc(var(--margin)/2) 0;
   background-color: var(--Cucumber);
@@ -189,6 +189,8 @@ body > header {
 }
 
 body > header h1 {
+  text-align: left;
+  padding-left: var(--margin);
   font-size: calc( 1.4 * var(--size-xl));
   margin: 0;
   font-weight: bold;
@@ -201,6 +203,13 @@ body > header h1 {
   }
   a:hover, a:active, a:focus {
     color: var(--White);
+  }
+}
+
+@media (min-width: 576px) {
+  body > header h1 {
+    text-align: center;
+    padding-left: 0;
   }
 }
 
