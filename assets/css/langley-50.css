@@ -134,6 +134,12 @@ body {
   font-family: var(--font-family-serif);
 }
 
+/* Temporary TK */
+#about-column {
+  visibility: hidden;
+}
+
+
 .sans,
 header,
 footer,
