@@ -147,6 +147,7 @@ h3,
 h4,
 #about-column {
   font-family: var(--font-family-sans);
+  font-size: calc( var(--sans-ratio) * 1em );
   line-height: var(--leading-sans);
 }
 
@@ -368,6 +369,10 @@ h2 {
   margin: 1em 0 .5rem 0;
 }
 
+h2 + h3 {
+  margin-top: 0;
+}
+
 h3, h4, h5, h6 {
   margin-top: calc(1rem * var(--leading));
   margin-bottom: .2rem;
@@ -446,12 +451,13 @@ a[href*="//"]:not([href*="angelacummings.com"])::after {
   font-weight: 700;
 }
 
-a > h2 {
+h2 > {
+  a {
   color: var(--Molasses);
-}
-
-a:hover > h2, a:active > h2, a:focus > h2 {
-  color: var(--Molasses);
+  }
+  a:hover > h2, a:active > h2, a:focus > h2 {
+    color: var(--Molasses);
+  }
 }
 
 blockquote {
@@ -883,10 +889,9 @@ nav li a {
   display: block;
   padding: .5em 20px;
   color: var(--DarkParchment);
-}
-
-nav li a:hover, a:active, a:focus {
-  color: var(--Parchment);
+  a:hover, a:active, a:focus {
+    color: var(--Parchment);
+  }
 }
 
 nav li.selected a {
