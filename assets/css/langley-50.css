@@ -410,6 +410,11 @@ p+p, p+.float+p {
   margin-top: calc(.5em * var(--leading));
 }
 
+.date {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
 a {
   color: var(--Rust);
   text-decoration: none;

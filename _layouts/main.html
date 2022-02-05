@@ -22,6 +22,9 @@ layout: default
       {%- endif -%}
     </figure>
   {%- endif -%}
+  {%- if page.written -%}
+    <div class='date'>{{ page.written | date: "%B %d, %Y" }}</div>
+  {%- endif -%}
 {%- if page.collection == "poems" -%}
     <div class="poetry">
   {%- include extend-markup.html html=content poetry=true preserve-headings=page.preserve-headings -%}
