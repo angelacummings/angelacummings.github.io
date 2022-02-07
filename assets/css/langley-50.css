@@ -239,9 +239,13 @@ div.page > nav, #about-column {
 }
 
 main {
+  min-height: 20em;
+}
+
+/* To ensure footnote markers get highlighted correcty */
+main, main blockquote, main div, main aside {
   position: relative;
   z-index: 1;
-  min-height: 20em;
 }
 
 #dummy {

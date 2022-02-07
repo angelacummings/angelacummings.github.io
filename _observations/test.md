@@ -53,7 +53,9 @@ Excepteur ea nulla commodo dolore anim dolore adipisicing eiusmod labore id enim
 
 In cupidatat nulla aliquip tempor ad Lorem Lorem quis voluptate officia consectetur pariatur ex in est duis. Mollit id esse est elit exercitation voluptate nostrud nisi laborum magna dolore dolore tempor in est consectetur.
 
->> Deserunt excepteur adipisicing culpa pariatur cillum laboris ullamco nisi fugiat cillum officia.
+>> Deserunt excepteur adipisicing culpa[^in] pariatur cillum laboris ullamco nisi fugiat cillum officia.
+
+[^in]: Here's a footnote.
 
 Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat veniam ullamco occaecat do ut. Tempor et esse reprehenderit veniam proident ipsum irure sit ullamco et labore ea excepteur nulla labore ut. Ex aute minim quis tempor in eu id id irure ea nostrud dolor esse.
 
