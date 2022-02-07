@@ -421,7 +421,7 @@ footer {
 p {
   margin: 0;
 }
-p+p, p+.float+p {
+p + p, p + .float + p, p + .pullquote + p {
   margin-top: calc(.5em * var(--leading));
 }
 
@@ -722,20 +722,21 @@ div.stanza {
 
 .sidenote {
   position: absolute;
-  padding: 2em 1rem 1rem 1em;
+  padding: 0 1rem 1rem 1rem;
   width: var(--width-sidebar);
   border-radius: var(--border-radius);
   background-color: var(--Parchment);
   box-shadow: var(--box-shadow-4);
 }
 
-.sidenote>.sidenote-self-link {
+.sidenote p {
+  color: var(--neutralPrimary);
+}
+
+.sidenote .sidenote-self-link {
   font-weight: 700;
   color: var(--LightMaple);
-  background-color: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: .5em 0 0 -.5em;
   width: 2em;
   height: 2em;
   display: flex;
@@ -745,12 +746,12 @@ div.stanza {
   border-radius: 50%;
 }
 
-.sidenote.highlighted>.sidenote-self-link {
+.sidenote.highlighted .sidenote-self-link {
   background-color: var(--DarkParchment);
   color: var(--Brick);
 }
 
-.sidenote-wrapper .reversefootnote {
+#sidenote-column .reversefootnote {
   display: none;
 }
 
@@ -776,13 +777,7 @@ a.footnote.highlighted::before {
   background-color: var(--DarkParchment);
 }
 
-.sidenote-wrapper {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: .5em;
-}
-
-.sidenote.highlighted .sidenote-outer-wrapper {
+.sidenote.highlighted {
   border-color: var(--LightMaple);
 }
 
