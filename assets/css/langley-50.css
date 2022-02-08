@@ -851,7 +851,7 @@ nav li {
   background-color: var(--Molasses);
   box-shadow: var(--box-shadow-4);
   border-radius: var(--border-radius);
-  transition: all 0.4s ease-in-out;
+  transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s;
 }
 
 nav li.selected {
@@ -912,7 +912,6 @@ body > header nav {
     text-align: right;
     width:0;
     right: -3rem;
-    transition: all 0.4s ease-in-out;
     & + li {
       right:-6em;
       & + li {
@@ -952,7 +951,7 @@ div.page {
   z-index: 30;
   opacity: 1;
   visibility:visible;
-  transition: all 0.4s ease-in-out;
+  transition: visibility .52s, opacity .52s, transform .52s;
 }
 
 body.navigation div.page {
