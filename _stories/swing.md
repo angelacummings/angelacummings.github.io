@@ -1,6 +1,6 @@
 ---
 title: Swing, Or Don't
-
+image: SwingOrDont_photo.jpg
 ---
 
 Rick sent it to me, in a box with random childhood objects I had intentionally left behind in Montana all those years ago. The recent newspaper clipping was buried beneath a scattering of torn baseball cards, matchbox cars, and merit badges. Vern Hamilton, of Jefferson County passed away January 5…
@@ -16,3 +16,12 @@ Here’s a scene from that day Vern took me for a hike along the caverns. I was 
 Swing or don’t.
 
 I put the box down, and I called her.
+
+
+
+> > ### 250/48 and May 11
+> >
+> > This short-short story was submitted to the Big Show Blog, Portland, OR as part of their 250/48 writing challenge.  I received the photo above and had 48 hours to write a short story, 250-words or less. 
+> >
+> > A quick internet search on "Lewis and Clark Caverns" revealed that this photo was probably taken at Montana's first state park, which was - incidentally - established on May 11, 1908.
+
