@@ -21,7 +21,7 @@ I put the box down, and I called her.
 
 > > ### 250/48 and May 11
 > >
-> > This short-short story was submitted to the Big Show Blog, Portland, OR as part of their 250/48 writing challenge.  I received the photo above and had 48 hours to write a short story, 250-words or less. 
+> > This short-short story was submitted to the Big Show Blog, Portland, OR as part of their 250/48 writing challenge.  I received the photo above on May 11, 2012 and had 48 hours to write a short story, 250-words or less. 
 > >
-> > A quick internet search on "Lewis and Clark Caverns" revealed that this photo was probably taken at Montana's first state park, which was -- incidentally -- established on May 11, 1908.
+> > In an interesting coincidence -- which the Big Show Blog was not aware of -- a quick internet search on "Lewis and Clark Caverns" revealed that this photo was probably taken at Montana's first state park, which was established on May 11, 1908.
 
