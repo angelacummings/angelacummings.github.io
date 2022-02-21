@@ -3,4 +3,4 @@ permalink: /
 class: wide title
 ---
 
-The last great accomplishment of science will be to prove that the poets were right about everything all along.
+*Sing all the silenced songs furled inside your heart's sharp memory, for you are a choir that gathers briefly, and only once.*  
