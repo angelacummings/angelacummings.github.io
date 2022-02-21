@@ -10,6 +10,6 @@ Her short story “Humane” was selected as a finalist for the *Aspen Writers�
 
 A Pacific Northwest native, she lives with her husband and dog on Whidbey Island.
 
-### Contact
+## Contact
 
 <info@tulipandhound.com>

@@ -47,6 +47,22 @@ layout: none
 
 </body>
 <script>
+  var links = document.getElementsByTagName('a');
+  for( var i=0,il = links.length; i< il; i ++ ) {
+    if( links[i].getAttribute("href").slice(0, 1) != "#") {
+        links[i].onclick = clickHandler;
+      }
+  }
+
+  function clickHandler(event) {
+    event.preventDefault();
+    var travelTo = this.getAttribute("href");
+    document.getElementsByTagName('body')[0].classList.toggle('navigation-start');
+    setTimeout(function() {
+      window.location.href = travelTo;
+    }, 520);
+  }
+
   window.addEventListener("DOMContentLoaded", function() {
       document.getElementById('burgerBtn').addEventListener('click', function() {
         document.getElementsByTagName('body')[0].classList.toggle('navigation');

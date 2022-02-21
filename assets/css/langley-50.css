@@ -49,6 +49,7 @@
   /* Theme colors */
   --Black: #000000;
   --LightMaple: #9D894D;
+  --LightMapleRGB: 157, 137, 77;
   --Molasses: #524728;
   --MolassesRGB: 82, 71, 40;
   --Parchment: #f2ead8;
@@ -160,6 +161,10 @@ table {
 
 /* Document layout */
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   overflow-x: hidden;
   background-color: var(--DarkParchment);
@@ -197,10 +202,10 @@ body > header h1 {
 
 body > header h1 {
   a {
-  color: var(--LightMaple);
+  color: var(--Black);
   }
   a:hover, a:active, a:focus {
-    color: var(--LightMaple);
+    color: var(--Black);
   }
 }
 
@@ -235,6 +240,7 @@ div.page > nav, #about-column {
 
 main {
   min-height: 20em;
+  padding: var(--margin) 0;
 }
 
 /* To ensure footnote markers get highlighted correcty */
@@ -344,16 +350,22 @@ div.page.title main {
 }
 
 div.page.title nav li {
-  background-color: rgba(var(--MolassesRGB), 0.6);
+  background-color: rgba(var(--MolassesRGB), 0.7);
   backdrop-filter: blur(15px) saturate(125%);
+  -webkit-backdrop-filter: blur(15px) saturate(125%);
+}
+
+div.page.title nav li.selected {
+  background-color: rgba(var(--LightMapleRGB), 0.7);
 }
 
 div.content {
-  background-color: rgba(var(--ParchmentRGB), 0.6);
+  background-color: rgba(var(--ParchmentRGB), 0.65);
   backdrop-filter: blur(20px) saturate(125%);
+  webkit-backdrop-filter: blur(20px) saturate(125%);
   position: relative;
   padding: 1rem;
-  top: 3rem;
+  top: 2rem;
   border-radius: var(--border-radius);
 }
 
@@ -560,9 +572,24 @@ aside.pullquote {
 }
 
 /* When div.box follows headline (optionally with a strapline or image), format it as a lede paragraph  */
-main.lede > p:first-of-type {
+main.lede > p:first-of-type, main.lede .content > p:first-of-type {
   color: var(--Molasses);
   font-weight: 700;
+}
+
+div.page.wide main.lede p:first-of-type {
+  color: var(--Black);
+  font-weight: normal;
+}
+
+div.page.wide:not(.title) main.lede p:first-of-type {
+  padding-right: 2em;
+}
+
+@media (min-width: 576px) {
+  div.page.wide main.lede p:first-of-type {
+    font-size: var(--size-l);
+  }
 }
 
 .box h2, .box h3, .box h4, .box h5 {
@@ -630,12 +657,7 @@ figcaption {
 }
 
 article {
-  padding: 1rem;
   margin: 1rem;
-}
-
-h1 + article {
-  margin-top: -2rem;
 }
 
 article > ul {
@@ -843,7 +865,7 @@ a.footnote.highlighted::before {
 /* Menu */
 
 #burgerBtn {
-  border-top:2px solid var(--LightMaple);
+  border-top:2px solid var(--Molasses);
   height:21px;
   width:30px;
   box-sizing:border-box;
@@ -875,7 +897,7 @@ a.footnote.highlighted::before {
   height:2px;
   width:30px;
   left:0;
-  background: var(--LightMaple);
+  background: var(--Molasses);
   top:7px;
   transition: all 0.3s ease-in-out;
 }
@@ -886,7 +908,7 @@ a.footnote.highlighted::before {
   height:2px;
   width:30px;
   left:0;
-  background: var(--LightMaple);
+  background: var(--Molasses);
   bottom:0;
   transition: all 0.3s ease-in-out;
 }
@@ -1001,15 +1023,56 @@ body.navigation {
   }
 }
 
+body.navigation-start > header nav li {
+  opacity: 0;
+}
+
 div.page {
   z-index: 30;
   opacity: 1;
   visibility:visible;
   transition: visibility .52s, opacity .52s, transform .52s;
+  animation: .52s 0s 1 slidein;
+}
+
+div.page.title {
+  animation: .52s 0s 1 centerin;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translatex(25%) translatey(-7.5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translatey(0) translatex(0%);
+  }
+}
+
+@keyframes centerin {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translatey(-7.5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translatey(0);
+  }
 }
 
 body.navigation div.page {
   opacity: 0;
   transform: scale(0.85) translatey(-7.5%);
   visibility:hidden;
+}
+
+body.navigation-start div.page:not(.title) {
+  opacity: 0;
+  transform: scale(.85) translatex(-25%) translatey(-7.5%);
+}
+
+body.navigation-start div.page.title {
+  opacity: 0;
+  transform: scale(.85) translatey(-7.5%);
 }
