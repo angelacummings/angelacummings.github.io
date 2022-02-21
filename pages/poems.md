@@ -4,8 +4,6 @@ permalink: /poems
 class: wide
 ---
 
-<article>
 {%- for note in site.poems -%}
   {% include snippet.html %}
 {%- endfor -%}
-</article>
