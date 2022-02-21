@@ -851,7 +851,7 @@ nav li {
   background-color: var(--Molasses);
   box-shadow: var(--box-shadow-4);
   border-radius: var(--border-radius);
-  transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s;
+  transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s, margin .52s;
 }
 
 nav li.selected {
@@ -888,7 +888,7 @@ nav li a {
   display: block;
   padding: .5em 20px;
   color: var(--DarkParchment);
-  a:hover, a:active, a:focus {
+  &:hover, &:active, &:focus {
     color: var(--Parchment);
   }
 }
