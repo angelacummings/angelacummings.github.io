@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<div class="page">
+<div class="page {% if page.class %}{{page.class}}{% endif %}">
   {% include navigation.html %}
 <main{% if page.lede %} class="lede"{% endif %}>
   <div id="dummy">
   </div>
+{% if page.class contains "title" %}
+<div class="content">
+{% endif %}
 {% if page.collection == "poems" %}
   <div class="poetry">
   <h2>{{ page.title | markdownify | striphtml }}</h2>
@@ -33,9 +36,13 @@ layout: default
 {% if page.collection == "poems" %}
   </div>
 {% endif %}
+{% if page.class contains "title" %}
+</div>
+{% endif %}
 </main>
 <div id='about-column'>
-  <p>Brief text about Angela Cummings.</p>
 </div>
+{% unless page.class contains "title" %}
 <div id='sidenote-column' class='footnotes' style='visibility:hidden'></div>
+{% endunless %}
 </div>

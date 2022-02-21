@@ -50,7 +50,9 @@
   --Black: #000000;
   --LightMaple: #9D894D;
   --Molasses: #524728;
+  --MolassesRGB: 82, 71, 40;
   --Parchment: #f2ead8;
+  --ParchmentRGB: 242, 234, 216;
   --DarkParchment: #ded6c1;
   --Hemlock: #4A6E5C;
   --Brick: #8e4122;
@@ -58,7 +60,8 @@
   /* Typography */
   --font-family-serif: "Libre Baskerville", Garamond, Georgia, serif;
   --font-family-sans: "HK Grotesk", "Myriad", "Helvetica Neue", sans-serif;
-  --font-family-headings: "Bodoni-11", Bodoni-11, "Bodoni MT", Bodoni, serif;
+  /* --font-family-headings: "Bodoni-11", Bodoni-11, "Bodoni MT", Bodoni, serif; */
+  --font-family-headings: "HK Grotesk", "Myriad", "Helvetica Neue", sans-serif;
   --sans-ratio: 1.08;
   --headings-ratio: 1.15;
   --font-family-mono: "Source Code Pro", monospace;
@@ -176,14 +179,6 @@ body > header, body > footer {
   margin: var(--gutter) auto;
 }
 
-body > header {
-  margin-top: 0;
-  padding: calc(var(--margin)/2) 0;
-  background-color: var(--LightMaple);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  box-shadow: var(--box-shadow-4);
-}
-
 @media (min-width: 576px) {
   body > header {
     margin-top: var(--gutter);
@@ -194,18 +189,18 @@ body > header {
 body > header h1 {
   text-align: left;
   padding-left: var(--margin);
+  font-family: var(--font-family-sans);
   font-size: calc( 1.4 * var(--size-xl));
   margin: 0;
-  font-weight: bold;
-  color: var(--DarkParchment);
+  font-weight: normal;
 }
 
 body > header h1 {
   a {
-  color: var(--Parchment);
+  color: var(--LightMaple);
   }
   a:hover, a:active, a:focus {
-    color: var(--Parchment);
+    color: var(--LightMaple);
   }
 }
 
@@ -276,7 +271,6 @@ main, main blockquote, main div, main aside {
     position: relative;
     z-index: 1;
     background-color: var(--Parchment);
-    box-shadow: var(--box-shadow-8);
     width: var(--width-body);
     padding: var(--margin);
     padding-bottom: calc( 2 * var(--margin) );
@@ -325,6 +319,66 @@ main, main blockquote, main div, main aside {
     width: calc( var(--width-sidebar) + 2rem );
   }
 }
+
+/* Title page */
+
+div.page.wide {
+  background-color: var(--Parchment);
+  padding: 0 var(--margin);
+  box-shadow: var(--box-shadow-8);
+  border-radius: var(--border-radius-large);
+}
+
+div.page.wide main {
+  box-shadow: none;
+}
+
+div.page.title:not(.about) {
+  background-image: url("/img/Angela_Cummings.jpg");
+  background-size: cover;
+  background-position: 80% 60%;
+}
+div.page.title main {
+  background-color: transparent;
+  height: calc(100vh - 140px);
+}
+
+div.page.title nav li {
+  background-color: rgba(var(--MolassesRGB), 0.6);
+  backdrop-filter: blur(15px) saturate(125%);
+}
+
+div.content {
+  background-color: rgba(var(--ParchmentRGB), 0.6);
+  backdrop-filter: blur(20px) saturate(125%);
+  position: relative;
+  padding: 1rem;
+  top: 3rem;
+  border-radius: var(--border-radius);
+}
+
+@media (min-width: 576px) {
+  div.content {
+    margin-right: 33%;
+  }
+  div.page.title {
+    background-image: url("/img/Angela_Cummings.jpg");
+    background-size: cover;
+    background-position: 80% 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  div.page.title main {
+    height: calc(100vh - 400px);
+  }
+  div.content {
+    padding: 2rem;
+    margin-right: 0;
+    top: 0;
+  }
+}
+
 
 h1, h2, .subtitle, h3, h4, h5, h6 {
   margin: 0;
@@ -789,22 +843,22 @@ a.footnote.highlighted::before {
 /* Menu */
 
 #burgerBtn {
-  border-top:2px solid var(--DarkParchment);
+  border-top:2px solid var(--LightMaple);
   height:21px;
   width:30px;
   box-sizing:border-box;
   position:absolute;
   z-index:30;
   right: var(--margin);
-  top:1.1em;
+  top: .7em;
   cursor:pointer;
   transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 576px) {
   #burgerBtn {
-    right:3em;
-    top:2em;
+    right: 3em;
+    top: 1em;
   }
 }
 
@@ -821,7 +875,7 @@ a.footnote.highlighted::before {
   height:2px;
   width:30px;
   left:0;
-  background: var(--DarkParchment);
+  background: var(--LightMaple);
   top:7px;
   transition: all 0.3s ease-in-out;
 }
@@ -832,7 +886,7 @@ a.footnote.highlighted::before {
   height:2px;
   width:30px;
   left:0;
-  background: var(--DarkParchment);
+  background: var(--LightMaple);
   bottom:0;
   transition: all 0.3s ease-in-out;
 }
@@ -851,7 +905,7 @@ nav li {
   background-color: var(--Molasses);
   box-shadow: var(--box-shadow-4);
   border-radius: var(--border-radius);
-  transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s, margin .52s;
+  transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s, margin .52s, padding .52s;
 }
 
 nav li.selected {
