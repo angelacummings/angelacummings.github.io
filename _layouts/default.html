@@ -13,7 +13,9 @@ layout: none
     <meta content="{{site.title}}" property="og:site_name"/>
     <meta content="{{site.description}}" property="og:description">
     <meta content="{{ site.url }}/about/" property="article:author">
+{% unless page.class contains "title" %}
     <script src="/assets/js/sidenotes.js" async></script>
+{% endunless %}
     {%- if page.title -%}
     <meta content="{{ page.title }}" property="og:title">
     <meta content="article" property="og:type">
