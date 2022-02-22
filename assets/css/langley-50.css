@@ -1032,11 +1032,11 @@ div.page {
   opacity: 1;
   visibility:visible;
   transition: visibility .52s, opacity .52s, transform .52s;
-  animation: .52s 0s 1 slidein;
+  animation: .52s slidein;
 }
 
 div.page.title {
-  animation: .52s 0s 1 centerin;
+  animation: .52s centerin;
 }
 
 @keyframes slidein {
