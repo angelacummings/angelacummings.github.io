@@ -64,9 +64,11 @@ layout: none
   }
 
   window.addEventListener("DOMContentLoaded", function() {
-      document.getElementById('burgerBtn').addEventListener('click', function() {
-        document.getElementsByTagName('body')[0].classList.toggle('navigation');
-      }, false);
+    document.getElementById('burgerBtn').classList.remove("navigation");
+    document.getElementsByTagName('body')[0].classList.remove("navigation-start");
+    document.getElementById('burgerBtn').addEventListener('click', function() {
+      document.getElementsByTagName('body')[0].classList.toggle('navigation');
+    }, false);
   }, false);
 </script>
 </html>
