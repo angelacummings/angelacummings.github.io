@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'PlusJakarta';
-    src:  url('/assets/fonts/PlusJakartaSans-Light.woff2') format('woff2'),
-         url('/assets/fonts/PlusJakartaSans-Light.woff') format('woff');
+    src:  url('/assets/fonts/plusjakartasans-light.woff2') format('woff2'),
+         url('/assets/fonts/plusjakartasans-light.woff') format('woff');
     font-style: normal;
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -205,7 +205,7 @@ body > header h1 {
   text-align: left;
   padding-left: var(--margin);
   font-family: var(--font-family-sans);
-  font-size: calc( 1.4 * var(--size-xl));
+  font-size: calc( 1.3 * var(--size-xl));
   margin: 0;
   font-weight: 300;
 }
@@ -249,7 +249,7 @@ div.page > nav, #about-column {
 }
 
 main {
-  min-height: 20em;
+  min-height: calc(100vh - 140px);
   padding: var(--margin) 0;
 }
 
@@ -286,6 +286,7 @@ main, main blockquote, main div, main aside {
     grid-row: 1 / 3;
     position: relative;
     z-index: 1;
+    min-height: 0;
     background-color: var(--Parchment);
     width: var(--width-body);
     padding: var(--margin);
@@ -349,15 +350,11 @@ div.page.wide main {
   box-shadow: none;
 }
 
-div.page.title:not(.about) {
+div.page.title {
   background-image: url("/img/Angela_Cummings.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 80% 60%;
-}
-div.page.title main {
-  background-color: transparent;
-  height: calc(100vh - 140px);
 }
 
 div.page.title nav li {
@@ -372,7 +369,7 @@ div.page.title nav li.selected {
   background-color: rgba(var(--LightMapleRGB), 0.7);
 }
 
-div.content {
+div.page.title div.content {
   /* background-color: rgba(var(--ParchmentRGB), 0.1); */
   /* backdrop-filter: blur(20px) saturate(125%); */
   box-shadow: var(--box-shadow-4);
@@ -383,7 +380,7 @@ div.content {
   overflow: hidden;
 }
 
-div.title main, div.title nav, div.title nav ul {
+div.page.title main, div.page.title nav, div.page.title nav ul {
   background: inherit;
 }
 
@@ -411,20 +408,6 @@ div.page.title nav li::after {
 }
 div.page.title nav li.selected::after {
   background-color: rgba(var(--LightMapleRGB), 0.6);
-}
-
-
-
-@media (min-width: 576px) {
-  div.content {
-    margin-right: 33%;
-  }
-  div.page.title {
-    background-image: url("/img/Angela_Cummings.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 80% 60%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -974,7 +957,7 @@ nav ul {
 
 nav li {
   font-weight: bold;
-  margin: 1.5em 0;
+  margin: 1.5em 0 1.5em auto;
   white-space: nowrap;
   color: var(--Parchment);
   background-color: var(--Molasses);
@@ -983,18 +966,20 @@ nav li {
   transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s, margin .52s, padding .52s;
 }
 
+nav li.selected, nav li:hover {
+  padding-left: 2em;
+}
 nav li.selected {
   background-color: var(--LightMaple);
 }
 
 @media (min-width: 992px) {
   nav li {
-    margin-top: 0;
-    margin-bottom: 1em;
-    margin-right: 2em;
+    margin: 0 2em 1em 0;
   }
   nav li:hover, nav li.selected {
     margin-right: 0;
+    padding-left: 0;
   }
 }
 

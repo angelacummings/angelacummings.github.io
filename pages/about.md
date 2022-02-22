@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /about
-class: wide title about
+class: wide title
 ---
 
 Angela Cummings is a poet and author of short fiction. Previous publications of her work include *Slightly West* magazine and *Cobalt Review*.
