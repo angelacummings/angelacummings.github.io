@@ -1,6 +1,7 @@
 ---
 title: Swing, Or Don't
 image: SwingOrDont_photo.jpg
+summary: Luckless at the poker table, but invincible in Pinochle.  He was the third base coach who never sent you home unless he knew you would be safe.
 ---
 
 Rick sent it to me, in a box with random childhood objects I had intentionally left behind in Montana all those years ago. The recent newspaper clipping was buried beneath a scattering of torn baseball cards, matchbox cars, and merit badges. Vern Hamilton, of Jefferson County passed away January 5…
