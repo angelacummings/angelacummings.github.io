@@ -30,9 +30,9 @@
   {%- if note.summary -%}
       {{ note.summary | markdownify }}
   {%- else -%}
-      {{ note.content | markdownify | strip_html | truncatewords: 50}}
+      {{ note.content | markdownify | strip_html | truncatewords: 30}}
   {%- endif -%}
-  <div class="sans"><a href="{{note.url}}">Read More</a></div>
+  <div class="sans"><a href="{{note.url}}">Continue reading</a></div>
   </div>
 </article>
 {% endif %}
