@@ -1,8 +1,30 @@
 <nav>
   <ul>
-    <li {% if page.collection=="poems" or page.url=="/poems" %}class="selected"{% endif %}><a href="/poems">Poems</a></li>
-    <li {% if page.collection=="stories" or page.url=="/stories" %}class="selected"{% endif %}><a href="/stories">Stories</a></li>
-    <li {% if page.collection=="observations" or page.url=="/observations" %}class="selected"{% endif %}><a href="/observations">Observations</a></li>
-    <li {% if page.url=="/about" %}class="selected"{% endif %}><a href="/about">About</a></li>
+    <li{% if page.collection=="poems" or page.url=="/poems" %} class="selected"{% endif %}>
+    {%- if page.url=="/poems" %}
+      <span>Poems</span>
+    {%- else %}
+      <a href="/poems">Poems</a>
+    </li>
+    {%- endif %}
+    <li{% if page.collection=="stories" or page.url=="/stories" %} class="selected"{% endif %}>
+    {%- if page.url=="/stories" %}
+      <span>Stories</span>
+    {%- else %}
+      <a href="/stories">Stories</a>
+    </li>
+    {%- endif %}
+    <li{% if page.collection=="observations" or page.url=="/observations" %} class="selected"{% endif %}>
+    {%- if page.url=="/observations" %}
+      <span>Observations</span>
+    {%- else %}
+      <a href="/observations">Observations</a>
+    </li>
+    {%- endif %}
+    {%- if page.url=="/about" %}
+    <li class="selected"><span>About</span></li>
+    {%- else %}
+    <li><a href="/about">About</a></li>
+    {%- endif %}
   </ul>
 </nav>

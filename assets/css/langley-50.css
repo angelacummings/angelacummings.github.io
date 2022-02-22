@@ -1,49 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro&display=swap');
-
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('/assets/fonts/hkgrotesk-medium.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/hkgrotesk-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/hkgrotesk-medium.woff2') format('woff2'), /* Modern Browsers */
-         url('/assets/fonts/hkgrotesk-medium.woff') format('woff'), /* Modern Browsers */;
+    font-family: 'PlusJakarta';
+    src:  url('/assets/fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+         url('/assets/fonts/PlusJakartaSans-Medium.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('/assets/fonts/hkgrotesk-mediumitalic.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/hkgrotesk-mediumitalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/hkgrotesk-mediumitalic.woff2') format('woff2'), /* Modern Browsers */
-         url('/assets/fonts/hkgrotesk-mediumitalic.woff') format('woff'), /* Modern Browsers */;
-    font-style: italic;
-    font-weight: normal;
+    font-family: 'PlusJakarta';
+    src:  url('/assets/fonts/PlusJakartaSans-Light.woff2') format('woff2'),
+         url('/assets/fonts/PlusJakartaSans-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('/assets/fonts/hkgrotesk-bold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/hkgrotesk-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/hkgrotesk-bold.woff2') format('woff2'), /* Modern Browsers */
-         url('/assets/fonts/hkgrotesk-bold.woff') format('woff'), /* Modern Browsers */;
+    font-family: 'PlusJakarta';
+    src:  url('/assets/fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+         url('/assets/fonts/PlusJakartaSans-Bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Bodoni-11';
-    src: url('/assets/fonts/bodoni-11-bold.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/bodoni-11-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/bodoni-11-bold.woff2') format('woff2'), /* Modern Browsers */
-         url('/assets/fonts/bodoni-11-bold.woff') format('woff'), /* Modern Browsers */;
+    font-family: 'Libre Baskerville';
+    src:  url('/assets/fonts/librebaskerville-regular.woff2') format('woff2'),
+         url('/assets/fonts/librebaskerville-regular.woff') format('woff'),
+         url('/assets/fonts/librebaskerville-regular.eot') format('eot');
     font-style: normal;
-    font-weight: 700;
+    font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: 'Libre Baskerville';
+    src:  url('/assets/fonts/librebaskerville-italic.woff2') format('woff2'),
+         url('/assets/fonts/librebaskerville-italic.woff') format('woff'),
+         url('/assets/fonts/librebaskerville-italic.eot') format('eot');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src:  url('/assets/fonts/librebaskerville-bold.woff2') format('woff2'),
+         url('/assets/fonts/librebaskerville-bold.woff') format('woff'),
+         url('/assets/fonts/librebaskerville-bold.eot') format('eot');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
 
 :root {
   /* Theme colors */
@@ -60,11 +70,11 @@
 
   /* Typography */
   --font-family-serif: "Libre Baskerville", Garamond, Georgia, serif;
-  --font-family-sans: "HK Grotesk", "Myriad", "Helvetica Neue", sans-serif;
+  --font-family-sans: "PlusJakarta", "Myriad", "Helvetica Neue", sans-serif;
   /* --font-family-headings: "Bodoni-11", Bodoni-11, "Bodoni MT", Bodoni, serif; */
-  --font-family-headings: "HK Grotesk", "Myriad", "Helvetica Neue", sans-serif;
-  --sans-ratio: 1.08;
-  --headings-ratio: 1.15;
+  --font-family-headings: "Libre Baskerville", "Myriad", "Helvetica Neue", sans-serif;
+  --sans-ratio: .98;
+  --headings-ratio: 1;
   --font-family-mono: "Source Code Pro", monospace;
   --mono-ratio: 1.1;
   --size-s: 14px;
@@ -197,7 +207,7 @@ body > header h1 {
   font-family: var(--font-family-sans);
   font-size: calc( 1.4 * var(--size-xl));
   margin: 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 body > header h1 {
@@ -438,24 +448,30 @@ h1, h3, .subtitle {
 }
 
 h2 {
-  font-weight: 400;
-}
-
-h1 {
   font-family: var(--font-family-headings);
+  font-weight: 700;
   line-height: var(--leading-sans);  /* Intentionally also for article H1 which is in serif */
 }
 
-h2, .subtitle {
+.subtitle {
   line-height: var(--leading-sans);
 }
 
 h1 {
+  font-family: var(--font-family-headings);
+  line-height: var(--leading-sans);
   color: var(--Molasses);
   font-size: calc(var(--headings-ratio) * var(--size-xxl));
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 1em;
   text-align: center;
+}
+
+.page.wide h1 {
+  font-family: var(--font-family-sans);
+  line-height: var(--leading-sans);
+  font-size: calc(var(--sans-ratio) * var(--size-xxl));
+  font-weight: 400;
 }
 
 .subtitle {
@@ -472,7 +488,7 @@ h1 {
 
 h2 {
   color: var(--Molasses);
-  font-size: calc(var(--sans-ratio) * var(--size-xl));
+  font-size: calc(var(--headings-ratio) * var(--size-xl));
   margin: 1em 0 .5rem 0;
 }
 
@@ -982,7 +998,7 @@ nav li.selected {
   }
 }
 
-nav li a {
+nav li a, nav li span {
   display: block;
   padding: .5em 20px;
   color: var(--DarkParchment);
@@ -991,8 +1007,16 @@ nav li a {
   }
 }
 
-nav li.selected a {
+nav li.selected a, nav li.selected span {
   color: var(--Parchment);
+}
+
+nav li.selected span {
+  cursor: default;
+}
+
+nav li.selected a::before {
+  content: '\21A9\FE0E\2003'
 }
 
 body > header nav {
@@ -1064,7 +1088,7 @@ div.page.title {
 @keyframes slidein {
   0% {
     opacity: 0;
-    transform: scale(0.85) translatex(25%) translatey(-7.5%);
+    transform: scale(0.85) translatex(20%) translatey(-7.5%);
   }
   100% {
     opacity: 1;
@@ -1091,7 +1115,7 @@ body.navigation div.page {
 
 body.navigation-start div.page:not(.title) {
   opacity: 0;
-  transform: scale(.85) translatex(-25%) translatey(-7.5%);
+  transform: scale(.85) translatex(-20%) translatey(-7.5%);
 }
 
 body.navigation-start div.page.title {
