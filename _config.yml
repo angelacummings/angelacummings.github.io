@@ -21,7 +21,7 @@
 title: Angela Cummings
 name: Angela Cummings
 email: eleventulips@hotmail.com
-description: Website of Angela Cummings with a collection of poems, stories and observations.
+description: Website of Angela Cummings with a collection of poems, stories and musings.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://angelacummings.com # the base hostname & protocol for your site, e.g. http://example.com
 copyright_name: MIT
@@ -55,9 +55,9 @@ collections:
     poems:
       output: true
       permalink: /poems/:title
-    observations:
+    musings:
       output: true
-      permalink: /observations/:title
+      permalink: /musings/:title
     stories:
       output: true
       permalink: /stories/:title
@@ -65,13 +65,21 @@ collections:
 toc:
   max_level: 3
 
+excerpt_separator: "\n"
+
 feed:
   excerpt_only: true
   path: /blog.atom
   collections:
-    observations:
+    poems:
       excerpt_only: true
-      path: "/observations.xml"
+      path: "/poems.xml"
+    stories:
+      excerpt_only: true
+      path: "/stories.xml"
+    musings:
+      excerpt_only: true
+      path: "/musings.xml"
 
 defaults:
   - scope:

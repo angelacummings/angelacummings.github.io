@@ -14,6 +14,3 @@ The dog's eyes indicated surrender, a succinct pleading for relief. There should
 But this beautiful man does (married man; married to another woman.)
 
 Lay down. Stay. Come. We are never trained to love well enough (alone).
-
-
-

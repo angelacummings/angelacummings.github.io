@@ -22,11 +22,11 @@ This is a quick reference sheet for managing your website.
 
 All files for the website pages must have the extension `.md` – Typora creates new documents with this extension by default but if you’re copying files from someplace else, make sure they are in Markdown.
 
-- Poems, stories and observations go into so-called ‘collections’. They are the folders `_poems`, `_stories` and `_observations`.
-- All images used in any of the post or pages should be stored in the `img` folder. (Typora automatically saves them there when you paste an image into a file.) 
+- Poems, stories and musings go into so-called ‘collections’. They are the folders `_poems`, `_stories` and `_musings`.
+- All images used in any of the post or pages should be stored in the `img` folder. (Typora automatically saves them there when you paste an image into a file.)
 - Other static pages are stored in the `pages` folder and indicate their URL in the front matter.
 
-Images 
+Images
 
 Front matter is required for all files that go online.
 
@@ -59,6 +59,7 @@ The front matter stores variables used during the generation of the web pages. E
 | `image: filename.jpg` | A featured image of the article. (Stored in `img` folder.)   |
 | `caption: Text`       | One line of text shown as the image caption                  |
 | `permalink: /link`    | URL of the page. (Do not use for collections.)               |
+| `summary: Text`    | Overrides the text used in the article's preview.                    |
 
 # Document Formatting
 
