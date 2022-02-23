@@ -5,9 +5,7 @@ summary: Luckless at the poker table, but invincible in Pinochle.  He was the th
 
 ![Old photo of a man and a boy at a park](/img/SwingOrDont_photo.jpg)
 
-Rick sent it to me, in a
-
- box with random childhood objects I had intentionally left behind in Montana all those years ago. The recent newspaper clipping was buried beneath a scattering of torn baseball cards, matchbox cars, and merit badges. Vern Hamilton, of Jefferson County passed away January 5…
+Rick sent it to me, in a box with random childhood objects I had intentionally left behind in Montana all those years ago. The recent newspaper clipping was buried beneath a scattering of torn baseball cards, matchbox cars, and merit badges. Vern Hamilton, of Jefferson County passed away January 5…
 
 Uncle Vern. I couldn’t remember the last time I thought about him. Hard-working, wise-ass, lovelorn Vern. He survived three-and-a-half wives, and the scandal of at least one knocked-up waitress. Luckless at the poker table, but invincible in Pinochle. He was the third base coach who never sent you home unless he knew you would be safe. No one filled a room like Vern. He could pick you up off your sad little floor with just a wink. He was fearless but all heart; his brother was just a pair of fists.
 
