@@ -4,7 +4,7 @@ class: wide
 lede: true
 ---
 
-*Sing all the silenced songs furled inside your heart's sharp memory, for you are a choir that magically unites, and only once.*
+*Sing all the silenced songs furled inside your heart's sharp memory, for you are a choir that magically assembles, and only once.*
 
 # List of poems
 
