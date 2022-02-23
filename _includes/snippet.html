@@ -16,8 +16,17 @@
   {% if include.full %}
   <h2><a href="{{note.url}}">{{ notename | markdownify | strip_html }}</a></h2>
   {% else %}
-  <h3><a href="{{note.url}}">{{ notename | markdownify | strip_html }}</a></h3>
+  <h2><a href="{{note.url}}">{{ notename | markdownify | strip_html }}</a></h2>
   {% endif %}
+{%- if include.poem -%}
+  {%- assign lines = note.content | split: "</li>" -%}
+<div class="stanza">
+  <div class="line">{{ lines[0] | markdownify | strip_html }}</div>
+  <div class="line">{{ lines[1] | markdownify | strip_html }}</div>
+  <div class="line">&hellip;</div>
+</div>
+<div class="sans"><a href="{{note.url}}">Continue reading</a></div>
+{%- endif -%}
 {%- if include.full -%}
   {% if note.subtitle %}
     {% if include.full %}
@@ -28,9 +37,9 @@
   {% endif %}
   <div>
   {%- if note.summary -%}
-      {{ note.summary | markdownify }}
+    {{ note.summary | markdownify }}
   {%- else -%}
-      {{ note.content | markdownify | strip_html | truncatewords: 30}}
+    {{ note.content | markdownify | strip_html | truncatewords: 30}}
   {%- endif -%}
   <div class="sans"><a href="{{note.url}}">Continue reading</a></div>
   </div>

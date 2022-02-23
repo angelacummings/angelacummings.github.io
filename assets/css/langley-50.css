@@ -457,6 +457,15 @@ h1 {
   font-weight: 400;
 }
 
+p + h1 {
+  margin-top: 1.3125em;
+}
+@media (min-width: 992px) {
+  p + h1 {
+    margin-top: 2em;
+  }
+}
+
 .subtitle {
   color: var(--Molasses);
   font-size: calc(var(--sans-ratio) * var(--size-l));
@@ -472,7 +481,7 @@ h1 {
 h2 {
   color: var(--Molasses);
   font-size: calc(var(--headings-ratio) * var(--size-xl));
-  margin: 1em 0 .5rem 0;
+  margin:  1.3125em 0 .5rem 0;
 }
 
 h2 + h3 {
@@ -805,6 +814,10 @@ div.stanza {
   margin-top: calc(1em * var(--leading));
   padding: 0;
   width: fit-content;
+}
+
+h2 + div.stanza {
+  margin-top: 1em;
 }
 
 .stanza .line {
