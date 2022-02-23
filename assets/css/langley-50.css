@@ -624,13 +624,14 @@ div.page.wide main.lede p:first-of-type {
   font-weight: normal;
 }
 
-div.page.wide:not(.title) main.lede p:first-of-type {
-  padding-right: 2em;
+div.page.wide.title main.lede {
+  padding-right: 25%;
 }
 
 @media (min-width: 576px) {
-  div.page.wide main.lede p:first-of-type {
+  div.page.wide.title main.lede p:first-of-type {
     font-size: var(--size-l);
+    padding-right: 0;
   }
 }
 
