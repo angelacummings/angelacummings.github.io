@@ -553,7 +553,7 @@ a:focus {
 
 }
 
-a[href*="//"]:not([href*="angelacummings.com"])::after {
+/* a[href*="//"]:not([href*="angelacummings.com"])::after {
   content: "↗\FE0E";
   position: relative;
   font-size: 70%;
@@ -561,7 +561,7 @@ a[href*="//"]:not([href*="angelacummings.com"])::after {
   top: -0.5em;
   font-style: normal;
   font-weight: 700;
-}
+} */
 
 h2 > {
   a {
@@ -828,7 +828,6 @@ h2 + div.stanza {
 @media (min-width: 576px) {
   .poetry .stanza .line {
     font-size: calc( 1.0625 * var(--size-m) );
-    line-height: calc( 1.1 * var(--leading) );
   }
 }
 
