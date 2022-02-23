@@ -1,4 +1,5 @@
-{%- if include.full -%}
+{%- if include.full or include.poem -%}
+
 <article>
   {%- if note.image -%}
     <a href='{{note.url}}'>
@@ -43,5 +44,7 @@
   {%- endif -%}
   <div class="sans"><a href="{{note.url}}">Continue reading</a></div>
   </div>
-</article>
 {% endif %}
+{%- if include.full or include.poem -%}
+</article>
+{%- endif -%}
