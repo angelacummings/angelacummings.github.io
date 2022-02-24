@@ -13,17 +13,18 @@ layout: none
     <meta content="{{site.title}}" property="og:site_name"/>
     <meta content="{{site.description}}" property="og:description">
     <meta content="{{ site.url }}/about/" property="article:author">
-{% unless page.class contains "title" %}
-    <script src="/assets/js/sidenotes.js" async></script>
-{% endunless %}
+    {% unless page.class contains "title" %}
+      <script src="/assets/js/sidenotes.js" async></script>
+    {% endunless %}
     {%- if page.title -%}
-    <meta content="{{ page.title }}" property="og:title">
-    <meta content="article" property="og:type">
+      <meta content="{{ page.title | markdownify | strip_html }} | Angela Cummings" property="og:title">
+      <meta content="article" property="og:type">
+      <title>{{ page.title | markdownify | strip_html }} | Angela Cummings</title>
     {%- else -%}
-    <meta content="website" property="og:type">
+      <meta content="Angela Cummings" property="og:title">
+      <meta content="website" property="og:type">
     {%- endif -%}
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    <title>{{site.title}}</title>
     <link rel="canonical" href="{{site.url}}{{page.url}}"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,7 +39,11 @@ layout: none
 
 <body>
   <header class="container">
-    <h1><a href="{{site.url}}">{{ site.title }}</a></h1>
+    {%- if page.title -%}
+      <div class="site-title"><a href="{{site.url}}">{{ site.title }}</a></h1>
+    {%- else -%}
+      <h1 class="site-title"><a href="{{site.url}}">{{ site.title }}</a></div>
+    {%- endif -%}
     <div id="burgerBtn"></div>
   {%- include navigation.html -%}
   </header>

@@ -201,31 +201,6 @@ body > header, body > footer {
   }
 }
 
-body > header h1 {
-  text-align: left;
-  padding-left: var(--margin);
-  font-family: var(--font-family-sans);
-  font-size: calc( 1.3 * var(--size-xl));
-  margin: 0;
-  font-weight: 300;
-}
-
-body > header h1 {
-  a {
-  color: var(--Black);
-  }
-  a:hover, a:active, a:focus {
-    color: var(--Black);
-  }
-}
-
-@media (min-width: 576px) {
-  body > header h1 {
-    text-align: center;
-    padding-left: 0;
-  }
-}
-
 div.page nav { display: block;}
 
 @media (max-width: 991px) {
@@ -437,11 +412,11 @@ div.page.title nav li.selected::after {
 }
 
 
-h1, h2, .subtitle, h3, h4, h5, h6 {
+h1, .site-title, h2, .subtitle, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1, h3, .subtitle {
+h1, .site-title, h3, .subtitle {
   font-weight: 700;
 }
 
@@ -455,7 +430,7 @@ h2 {
   line-height: var(--leading-sans);
 }
 
-h1 {
+h1, .site-title {
   font-family: var(--font-family-headings);
   line-height: var(--leading-sans);
   color: var(--Molasses);
@@ -463,6 +438,27 @@ h1 {
   font-weight: 700;
   margin-bottom: 1em;
   text-align: center;
+}
+
+.site-title {
+  text-align: left;
+  padding-left: var(--margin);
+  font-family: var(--font-family-sans);
+  font-size: calc( 1.3 * var(--size-xl));
+  margin: 0;
+  font-weight: 300;
+
+  @media (min-width: 576px) {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  a {
+    color: var(--Black);
+    &:hover, &:active, &:focus {
+      color: var(--Black);
+    }
+  }
 }
 
 .page.wide h1 {
