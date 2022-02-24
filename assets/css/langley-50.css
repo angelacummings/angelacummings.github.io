@@ -945,7 +945,7 @@ a.footnote.highlighted::before {
   right: var(--margin);
   top: .7em;
   cursor:pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.52s;
 }
 
 @media (min-width: 576px) {
@@ -970,7 +970,7 @@ a.footnote.highlighted::before {
   left:0;
   background: var(--Molasses);
   top:7px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.52s;
 }
 #burgerBtn:after {
   content:"";
@@ -981,7 +981,7 @@ a.footnote.highlighted::before {
   left:0;
   background: var(--Molasses);
   bottom:0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.52s;
 }
 
 nav ul {
