@@ -357,7 +357,7 @@ div.page.wide main {
 }
 
 div.page.title {
-  background-image: url("/img/Angela_Cummings.jpg");
+  background-image: url("/img/Angela_Cummings_PNW.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 77% 60%;
@@ -490,7 +490,7 @@ p + h1 {
 }
 
 .subtitle + figure, h1 + figure {
-  margin-top: -1em;
+  margin-top: -.5em;
 }
 
 h2 {
@@ -674,6 +674,14 @@ ul, ol {
 figure {
   margin: calc(1rem * var(--leading)) 0;
   width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  img.portrait {
+    width: 66%;
+    margin: 0 auto;
+  }
 }
 
 figure > img {

@@ -1,8 +1,11 @@
 ---
 title: About
 permalink: /about
-class: wide title
+class: wide
 ---
+
+![portrait of Angela Cummings](/img/Angela_Cummings.jpg){:.portrait}
+{:.float}
 
 Angela Cummings is a poet and author of short fiction. In 2021 she published her first book of fiction for young readers, [Siren and the Serenade](https://tulipandhound.com/siren-and-the-serenade/). Previous publications of her work include *Slightly West* magazine and *Cobalt Review*.
 
