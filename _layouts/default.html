@@ -17,10 +17,11 @@ layout: none
       <script src="/assets/js/sidenotes.js" async></script>
     {% endunless %}
     {%- if page.title -%}
+      <title>{{ page.title | markdownify | strip_html }} | Angela Cummings</title>
       <meta content="{{ page.title | markdownify | strip_html }} | Angela Cummings" property="og:title">
       <meta content="article" property="og:type">
-      <title>{{ page.title | markdownify | strip_html }} | Angela Cummings</title>
     {%- else -%}
+    <title>Angela Cummings</title>
       <meta content="Angela Cummings" property="og:title">
       <meta content="website" property="og:type">
     {%- endif -%}
