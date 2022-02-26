@@ -5,6 +5,8 @@ summary: I heard stories about him for years, saw him in the flesh a few times, 
 ---
 
 >> [LUKE Wines](https://www.winesbyluke.com/) are produced from grapes grown in the Wahluke Slope AVA in Washington state.  Wahluke is the Wanapum word for "watering place."  Just as the Wahluke Slope is unique in climate and character, LUKE wines created a new way of describing not only their wine, but the essence of the land and people that come together to create a distinguished experience.
+>>
+>> I was honored to be asked by the wine makers to describe LUKE -- the man and his point of view -- in the following vignettes that are featured on the labels of LUKE wines.  
 
 ![LUKE Cabernet Sauvignon label](/img/LUKE_Cab_Sauv.jpg){:.portrait}
 {:.float}
