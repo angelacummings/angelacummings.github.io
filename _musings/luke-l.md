@@ -14,12 +14,16 @@ published: false
 
 The true depth of a man's character is often unknowable, but one conversation was enough to convince me that Luke was an imitation of no one. He revealed himself slowly, like a freed wind emerging from the shadow of a mountain. Undeniable complex. Bold and determined, but unabashedly generous.
 
+- - -
+
 ![LUKE Chardonnay label](/img/LUKE_Chardonnay.jpg){:.portrait}
 {:.float}
 
 ## LUKE -- Observation
 
 "At first, this walk seems familiar -- the same path I've traveled a hundred times. But it isn't.  Look around.  Notice the veins of the leaves, this afternoon hour's particular angle of light, and know that tomorrow this walk will be new again. Our singular journey of life -- how wonderfully it emerges, illuminates us, and how quickly it goes."
+
+- - -
 
 ![LUKE Companion label](/img/LUKE_Red_Blend.jpg){:.portrait}
 {:.float}

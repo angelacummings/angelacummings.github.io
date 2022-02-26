@@ -707,10 +707,10 @@ figcaption {
 @media (min-width: 576px) {
   .float, aside.pullquote {
     float: right;
-    margin: 1em;
-    margin-right: 0;
+    margin: 0 0 1em 1em;
     width: var(--float-width);
     line-height: var(--leading-tight);
+    clear: both;
   }
   aside.pullquote {
     padding: 0;
@@ -802,6 +802,7 @@ hr {
   border: none;
   border-bottom: var(--border);
   box-shadow: none;
+  clear: both;
 }
 
 /* Tables */
