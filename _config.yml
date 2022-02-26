@@ -61,6 +61,9 @@ collections:
     stories:
       output: true
       permalink: /stories/:title
+    preview:
+      output: true
+      permalink: /preview/:title
 
 toc:
   max_level: 3
@@ -86,6 +89,12 @@ defaults:
       path: ""
     values:
       layout: main
+  - scope:
+      path: ""
+      type: preview
+    values:
+      layout: main
+      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
