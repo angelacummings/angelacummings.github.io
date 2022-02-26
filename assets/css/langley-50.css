@@ -65,8 +65,10 @@
   --Parchment: #f2ead8;
   --ParchmentRGB: 242, 234, 216;
   --DarkParchment: #ded6c1;
+  --Seagull: #57544c;
   --Hemlock: #4A6E5C;
   --Brick: #8e4122;
+  --Sunflower: #ffd557;
 
   /* Typography */
   --font-family-serif: "Libre Baskerville", Garamond, Georgia, serif;
@@ -610,8 +612,16 @@ blockquote {
 
 div.box {
   color: var(--Parchment);
-  background-color: var(--LightMaple);
+  background-color: var(--Seagull);
+  a {
+    color: var(--Sunflower);
+    &:hover, &:active, &:focus {
+      color: var(--DarkParchment);
+    }
+  }
 }
+
+
 
 aside.pullquote {
   display: block;
@@ -671,6 +681,7 @@ figure {
   margin: calc(1rem * var(--leading)) 0;
   width: 100%;
   text-align: center;
+  clear: both;
 }
 
 @media (max-width: 575px) {
