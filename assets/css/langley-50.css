@@ -66,6 +66,7 @@
   --ParchmentRGB: 242, 234, 216;
   --DarkParchment: #ded6c1;
   --Seagull: #57544c;
+  --SeagullRGB: 87, 84, 76;
   --Toast: #948a6d;
   --ToastRGB: 148 138 109;
   --Hemlock: #4A6E5C;
@@ -404,7 +405,7 @@ div.content::after {
 }
 
 div.page.title nav li::after {
-  background-color: rgba(var(--MolassesRGB), 0.6);
+  background-color: rgba(var(--SeagullRGB), 0.6);
   z-index: -1;
 }
 div.page.title nav li.selected::after {
@@ -444,7 +445,6 @@ h2 {
 h1, .site-title {
   font-family: var(--font-family-headings);
   line-height: var(--leading-sans);
-  color: var(--Molasses);
   font-size: calc(var(--headings-ratio) * var(--size-xxl));
   font-weight: 700;
   margin-bottom: 1em;
@@ -597,7 +597,7 @@ h2 > {
 blockquote {
   margin-left: 1em;
   margin-right: 0;
-  color: var(--Molasses);
+  color: var(--Seagull);
   /* font-style: italic; */
 }
 
@@ -647,7 +647,7 @@ aside.pullquote {
 
 /* When div.box follows headline (optionally with a strapline or image), format it as a lede paragraph  */
 main.lede > p:first-of-type, main.lede .content > p:first-of-type {
-  color: var(--Molasses);
+  color: var(--Seagull);
   font-weight: 700;
 }
 
@@ -1021,7 +1021,7 @@ nav li {
   margin: 1.5em 0 1.5em auto;
   white-space: nowrap;
   color: var(--Parchment);
-  background-color: var(--Molasses);
+  background-color: var(--Seagull);
   box-shadow: var(--box-shadow-4);
   border-radius: var(--border-radius);
   transition: background-color .52s, opacity .52s, visibility .52s, width .52s, right .52s, margin .52s, padding .52s;
