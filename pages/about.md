@@ -2,6 +2,7 @@
 title: About
 permalink: /about
 class: wide
+summary: Angela Cummings is a poet and author of short fiction.
 ---
 
 ![portrait of Angela Cummings](/img/Angela_Cummings.jpg){:.portrait}

@@ -1,6 +1,7 @@
 ---
 permalink: /poems
 class: wide
+summary: A list of selected poems by Angela Cummings.
 lede: true
 preserve-headings: true
 ---

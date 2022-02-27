@@ -2,6 +2,7 @@
 title: Stories
 permalink: /stories
 preserve-headings: true
+summary: A list of selected stories by Angela Cummings.
 class: wide
 ---
 
