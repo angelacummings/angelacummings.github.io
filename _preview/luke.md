@@ -11,7 +11,7 @@ summary: I heard stories about him for years, saw him in the flesh a few times, 
 ![LUKE Cabernet Sauvignon label](/img/LUKE_Cab_Sauv.jpg){:.portrait}
 {:.float}
 
-The true depth of a man's character is often unknowable, but one conversation was enough to convince me that Luke was an imitation of no one. He revealed himself slowly, like a freed wind emerging from the shadow of a mountain. Undeniable complex. Bold and determined, but unabashedly generous.
+The true depth of a man's character is often unknowable, but one conversation was enough to convince me that Luke was an imitation of no one. He revealed himself slowly, like a freed wind emerging from the shadow of a mountain. Undeniably complex. Bold and determined, but unabashedly generous.
 
 - - -
 
