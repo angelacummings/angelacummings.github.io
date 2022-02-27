@@ -66,6 +66,8 @@
   --ParchmentRGB: 242, 234, 216;
   --DarkParchment: #ded6c1;
   --Seagull: #57544c;
+  --Toast: #948a6d;
+  --ToastRGB: 148 138 109;
   --Hemlock: #4A6E5C;
   --Brick: #8e4122;
   --Sunflower: #ffd557;
@@ -94,13 +96,13 @@
   /* Layout */
   --width-body: 550px;
   --width-sidebar: 150px;
-  --margin: 1.3125rem;
+  --margin: 1.5rem;
   --gutter: calc(1rem + ((1vw - 3.75px) * 5));
   --border-radius: 4px; /* from MS Fluent UI for small items  */
   --border-radius-large: 8px; /* from MS Fluent UI for large items  */
   --box-shadow-4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108); /* from ms-depth-4 */
   --box-shadow-8: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132), 0 0.6px 1.8px 0 rgba(0, 0, 0, 0.108); ; /* from ms-depth-8 */
-  --border: 1px solid var(--Hemlock);
+  --border: 1px solid var(--Seagull);
   --float-width: 40%;
   --transition: 0.467s cubic-bezier(0.1,0.9,0.2,1);
 }
@@ -203,7 +205,9 @@ body > header, body > footer {
   }
 }
 
-div.page nav { display: block;}
+div.page nav {
+  display: block;
+}
 
 @media (max-width: 991px) {
   div.page {
@@ -212,11 +216,16 @@ div.page nav { display: block;}
     padding: var(--margin);
     padding-bottom: calc( 2 * var(--margin) );
     box-shadow: var(--box-shadow-8);
-    border-radius: var(--border-radius-large);
   }
   /* Hide desktop-only elements*/
   #sidenote-column, div.page nav, #about-column {
     display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  div.page {
+    border-radius: var(--border-radius-large);
   }
 }
 
@@ -349,7 +358,7 @@ div.page.title nav li {
 }
 
 div.page.title nav li.selected {
-  background-color: rgba(var(--LightMapleRGB), 0.7);
+  background-color: rgba(var(--ToastRGB), 0.7);
 }
 
 div.page.title div.content {
@@ -399,7 +408,7 @@ div.page.title nav li::after {
   z-index: -1;
 }
 div.page.title nav li.selected::after {
-  background-color: rgba(var(--LightMapleRGB), 0.6);
+  background-color: rgba(var(--ToastRGB), 0.6);
 }
 
 @media (min-width: 992px) {
@@ -631,7 +640,9 @@ aside.pullquote {
   line-height: var(--leading-tight);
   padding-left: 3rem;
   text-align: right;
-  color: var(--LightMaple);
+  color: var(--Seagull);
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 /* When div.box follows headline (optionally with a strapline or image), format it as a lede paragraph  */
@@ -712,8 +723,11 @@ figcaption {
     line-height: var(--leading-tight);
     clear: both;
   }
+  p + .float, p + aside.pullquote {
+    margin-top: 1em;
+  }
   aside.pullquote {
-    padding: 0;
+    padding: .5em 0;
   }
   .edge {
     position: relative;
@@ -810,7 +824,7 @@ hr {
 table {
   margin: calc(1em * var(--leading)) 0;
   border-collapse: collapse;
-  border-bottom:  1px solid var(--Hemlock);
+  border-bottom:  1px solid var(--Seagull);
 }
 
 th,
@@ -820,7 +834,7 @@ td {
 }
 
 th {
-  background-color: var(--Hemlock);
+  background-color: var(--Seagull);
   font-weight: bold;
   color: var(--Parchment);
   vertical-align: bottom;
@@ -1017,7 +1031,7 @@ nav li.selected, nav li:hover {
   padding-left: 2em;
 }
 nav li.selected {
-  background-color: var(--LightMaple);
+  background-color: var(--Toast);
 }
 
 @media (min-width: 992px) {
