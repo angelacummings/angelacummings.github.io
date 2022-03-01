@@ -1,6 +1,7 @@
 ---
 title: Swing, Or Don't
 summary: Luckless at the poker table, but invincible in Pinochle.  He was the third base coach who never sent you home unless he knew you would be safe.
+written: 2012-05-13
 ---
 
 ![Old photo of a man and a boy at a park](/img/SwingOrDont_photo.jpg)

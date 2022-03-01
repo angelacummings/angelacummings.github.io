@@ -6,6 +6,7 @@ summary: A list of musings and observations by Angela Cummings.
 preserve-headings: true
 ---
 
-{%- for note in site.musings -%}
+{%- assign sortedNotes = site.musings | sort: 'written' | reverse %}
+{%- for note in sortedNotes -%}
 {% include snippet.html full=true %}
 {%- endfor -%}

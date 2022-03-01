@@ -2,6 +2,7 @@
 title: LUKE
 subtitle: Honoring the Unique Character of LUKE Wines
 summary: I heard stories about him for years, saw him in the flesh a few times, and spoke to him only once.
+written: 2022-02-28
 ---
 
 >> [LUKE Wines](https://www.winesbyluke.com/) are produced from grapes grown in the Wahluke Slope AVA in Washington state.  Wahluke is the Wanapum word for "watering place."  Just as the Wahluke Slope is unique in climate and character, LUKE wines created a new way of describing not only their wine, but the essence of the land and people that come together to create a distinguished experience.

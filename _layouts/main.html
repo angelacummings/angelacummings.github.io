@@ -29,7 +29,7 @@ layout: default
     {%- endif -%}
   </figure>
 {% endif %}
-{% if page.written %}
+{% if page.collection == "musings" and page.written %}
   <div class='date'>{{ page.written | date: "%B %d, %Y" }}</div>
 {% endif %}
 {% include extend-markup.html html=content %}

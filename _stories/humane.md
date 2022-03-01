@@ -1,6 +1,7 @@
 ---
 title: Humane
 summary: The dog’s eyes indicated surrender, a succinct pleading for relief. There should be no delay – anymore...
+written: 2012-12-01
 ---
 
 *Originally published in [Esquire Magazine's 2012 Short Short Fiction](https://www.esquire.com/entertainment/books/a18758/short-short-fiction-contest-winners-2012/) contest - December 2012*
