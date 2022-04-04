@@ -16,7 +16,7 @@ Make no mistake--the heart shaped ice sheet; the ridge of volcanoes still oozing
 
 
 
-And while the A-list Planets cuddle up in their most recent flamboyant conjunction, our patient Pluto silently waits; ready to pour a cosmic cocktail whenever his Galactic Compatriots bother to be in the neighborhood.  
+And while the A-list Planets cuddle up in their most recent flamboyant conjunction, Pluto silently waits; ready to pour a cosmic cocktail whenever his Galactic Compatriots bother to be in the neighborhood.  
 
 
 
