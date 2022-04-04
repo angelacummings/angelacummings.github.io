@@ -12,7 +12,7 @@ But back to our hero. What science has just admitted to us (albeit seven years l
 
 
 
-Make no mistake--the heart shaped ice sheet; the ridge of volcanoes still oozing out their stuff; the slow, cool ocean resting just beneath the surface--do not disregard what all this adds up to.  Our Hero, like all heroes, is a romantic.
+Make no mistake -- the heart-shaped ice sheet; the ridge of volcanoes still oozing out their stuff; the slow, cool ocean resting just beneath the surface -- do not disregard what all this adds up to.  Our Hero, like all heroes, is a romantic.
 
 
 
