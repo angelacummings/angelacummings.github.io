@@ -10,7 +10,7 @@ title: The Rush
 
 - ~
 - Here comes the rush of the hour:
-- the bold, needle-less limbs of the fir
+- the bold, needle-less limbs of the fir tree
 - welcoming all guests; its deep, dark
 - hostels uniting migrants and natives alike.
 - Note: this tree is not really a fir.
