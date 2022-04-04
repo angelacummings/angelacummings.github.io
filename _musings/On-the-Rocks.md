@@ -4,7 +4,7 @@ subtitle: Is that Ice in Your Volcanoes or Are You Just Happy to Be Alive?
 written: 2022-03-31
 ---
 
-Our friends in the Astroverse have published a new discovery regarding out Outlier Hero, Pluto. This news is heartening on several levels, not least of which is the reassurance that when Earth finally goes out of business due to lack of ability to sustain Homo sapiens in any reasonable format, the byproduct of which will be the shuttering of all 7-11s everywhere, the universe will still be making slushies on demand.
+Our friends in the Astroverse have published a new discovery regarding our Outlier Hero, Pluto. This news is heartening on several levels, not least of which is the reassurance that when Earth finally goes out of business due to lack of ability to sustain Homo sapiens in any reasonable format, the byproduct of which will be the shuttering of all 7-11s everywhere, the universe will still be making slushies on demand.
 
 
 
