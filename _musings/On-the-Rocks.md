@@ -8,7 +8,7 @@ Our friends in the Astroverse have published a new discovery regarding out Outli
 
 
 
-But back to our hero. What science has just admitted t us (seven years later!) is that out there on the frigid edge, this baby got a fire inside!  
+But back to our hero. What science has just admitted to us (albeit seven years later) is that out there on the frigid edge, this baby got a fire inside!  
 
 
 
