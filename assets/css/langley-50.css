@@ -345,32 +345,32 @@ div.page.wide main {
 
 div.page.title {
   background-image: url("/img/Angela_Cummings_PNW.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-position: 77% 60%;
 }
 
 div.page.title nav li {
-  /* background-color: rgba(var(--MolassesRGB), 0.7); */
+  background-color: rgba(var(--SeagullRGB), 0.6);
   position: relative;
-  background: inherit;
   overflow: hidden;
   z-index: 1;
 }
 
 div.page.title nav li.selected {
-  background-color: rgba(var(--ToastRGB), 0.7);
+  background-color: rgba(var(--ToastRGB), 0.6);
 }
 
 div.page.title div.content {
-  /* background-color: rgba(var(--ParchmentRGB), 0.1); */
-  /* backdrop-filter: blur(20px) saturate(125%); */
+  background-color: rgba(var(--ParchmentRGB), 0.6);
   box-shadow: var(--box-shadow-4);
   position: relative;
   padding: 1rem;
   border-radius: var(--border-radius);
-  background: inherit;
   overflow: hidden;
+}
+
+div.page.title div.content, div.page.title nav li {
+  backdrop-filter: blur(20px) saturate(125%);
 }
 
 @media (min-width: 576px) {
@@ -383,9 +383,10 @@ div.page.title div.content {
 }
 
 div.page.title main, div.page.title nav, div.page.title nav ul {
-  background: inherit;
+  background: transparent;
 }
 
+/*
 div.content::after, div.content::before, div.page.title nav li::after, div.page.title nav li::before {
   content: '';
   position: absolute;
@@ -411,6 +412,7 @@ div.page.title nav li::after {
 div.page.title nav li.selected::after {
   background-color: rgba(var(--ToastRGB), 0.6);
 }
+*/
 
 @media (min-width: 992px) {
   div.page.title main {
@@ -596,9 +598,12 @@ h2 > {
 
 blockquote {
   margin-left: 1em;
+  padding: 1em;
   margin-right: 0;
   color: var(--Seagull);
-  /* font-style: italic; */
+  background-color: var(--DarkParchment);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-4);
 }
 
 @media (min-width: 576px) {
