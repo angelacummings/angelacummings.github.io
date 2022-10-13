@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PlusJakarta';
-    src:  url('/assets/fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
-         url('/assets/fonts/PlusJakartaSans-Medium.woff') format('woff');
+    src:  url('/assets/fonts/PlusJakartaSans-Medium.woff2') format('font/woff2'),
+         url('/assets/fonts/PlusJakartaSans-Medium.woff') format('font/woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'PlusJakarta';
-    src:  url('/assets/fonts/plusjakartasans-light.woff2') format('woff2'),
-         url('/assets/fonts/plusjakartasans-light.woff') format('woff');
+    src:  url('/assets/fonts/plusjakartasans-light.woff2') format('font/woff2'),
+         url('/assets/fonts/plusjakartasans-light.woff') format('font/woff');
     font-style: normal;
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -370,6 +370,7 @@ div.page.title div.content {
 }
 
 div.page.title div.content, div.page.title nav li {
+  -webkit-backdrop-filter:  blur(20px) saturate(125%);
   backdrop-filter: blur(20px) saturate(125%);
 }
 
