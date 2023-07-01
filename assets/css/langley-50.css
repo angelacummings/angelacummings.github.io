@@ -291,7 +291,7 @@ main, main blockquote, main div, main aside {
     height: fit-content;
   }
   div.page nav {
-    width: calc( var(--width-sidebar) + 2em );
+    width: calc( var(--width-sidebar) + 4em );
   }
   #about-column {
     padding: 1rem;
@@ -1102,7 +1102,7 @@ body.navigation {
   > header nav li {
     visibility: visible;
     opacity: 1;
-    width:10em;
+    width:12em;
     right:0;
   }
   #burgerBtn {
